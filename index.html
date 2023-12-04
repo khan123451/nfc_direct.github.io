@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple HTML Page</title>
+  <style>
+    /* Your CSS styles go here */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .img {
+      width: 80px;
+      height: 80px;
+    }
+
+    .menu {
+        display: inline-block;
+    }
+
+    h1 {
+      color: #0088cc;
+      text-align: center;
+      font-weight: bold;
+      font-size: 32px;
+    }
+
+    h2 {
+      color: #ff5858;
+      text-align: center;
+      font-weight: bold;
+      font-size: 26px;
+    }
+
+    h3 {
+      color: #000000;
+      text-align: center;
+      font-weight: normal;
+      font-size: 20px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    a:hover h3{
+      color: #ff5858;
+    }
+
+    ul {
+      list-style-type: none;
+      display: block;
+    }
+
+    li {
+      display:block;
+      float:left;
+      width: 100px; /* adjust */
+      height:150px; /* adjust */
+      padding: 8px; /*adjust*/
+    }
+
+    .sub {
+      padding: 8px; /*adjust*/
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Welcome!</h1>
+
+  <h2>Here are some ways to contact with Khan</p>
+  <div class="container">
+    <ul class="menu">
+        <li>
+          <div class="sub">
+              <a href="khan-qr.jpg">
+                <div style="float: center;">
+                  <img class="img" src="wechat.png">
+                </div>
+                <div style="float: center;">
+                    <h3>Wechat<br>微信</h3>
+                </div>
+              </a> 
+          </div>
+        </li>
+
+        <li>
+          <div class="sub">
+            <span class="icon" onclick="showMessage()">
+              <a href="https://www.instagram.com/zucchinigx/">
+                <div style="float: center;">
+                  <img class="img" src="ig.png">
+                </div>
+                <div style="float: center;">
+                    <h3>Instagram</h3>
+                </div>
+              </a>
+            </span>
+          </div>
+        </li>
+
+        <li>
+          <div class="sub">
+            <a href="https://www.khanzheng.com">
+              <div style="float: center;">
+                <img class="img" src="pw.jpg">
+              </div>
+              <div style="float: center;">
+                  <h3>Personal<br>Website</h3>
+              </div>
+            </a>
+          </div>
+        </li>
+
+        <li>
+          <div class="sub">
+                <div style="float: center;">
+                  <img class="img" src="cv.png">
+                </div>
+                <a href="khan-cv-en.pdf">
+                  <div style="float: center;">
+                      <h3 style="white-space: nowrap;">CV in English</h3>
+                  </div>
+                </a> 
+                <a href="khan-cv-cn.pdf">
+                  <div style="float: center;">
+                    <h3 style="white-space: nowrap;">CV in 中文</h3>
+                  </div>
+                </a> 
+          </div>
+        </li>
+
+        <li>
+          <div class="sub">
+            <a href="https://github.com/khan123451">
+              <div style="float: center;">
+                <img class="img" src="github.png">
+              </div>
+              <div style="float: center;">
+                  <h3>Github</h3>
+              </div>
+            </a>
+          </div>
+        </li>
+
+        <li>
+          <div class="sub">
+            <a href="https://space.bilibili.com/4128839?spm_id_from=333.337.search-card.all.click">
+              <div style="float: center;">
+                <img class="img" src="bilibili.png">
+              </div>
+              <div style="float: center;">
+                  <h3>BiliBili</h3>
+              </div>
+            </a>
+          </div>
+        </li>
+    </ul> 
+  </div>
+  <script>
+    function showAlert() {
+        alert('Thanks!');
+    }
+
+    function showMessage() {
+    }
+  </script>
+</body>
+</html>
