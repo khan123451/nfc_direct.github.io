@@ -11,7 +11,7 @@
     }
 
     .container {
-      width: 90%;
+      width: 80%;
       margin: 0 auto;
       padding: 20px;
       background-color: #fff;
@@ -21,8 +21,8 @@
     }
 
     .img {
-      width: 60px;
-      height: 60px;
+      width: 80px;
+      height: 80px;
     }
 
     .menu {
@@ -59,6 +59,7 @@
     }
 
     ul {
+      overflow-x:hidden;
       white-space: nowrap;
       list-style-type: none;
       display: block;
@@ -67,7 +68,7 @@
     li {
       display:block;
       float:left;
-      width: 80px; /* adjust */
+      width: 100px; /* adjust */
       height:150px; /* adjust */
       padding: 8px; /*adjust*/
     }
@@ -95,6 +96,21 @@
                     <h3>Wechat<br>微信</h3>
                 </div>
               </a> 
+          </div>
+        </li>
+
+        <li>
+          <div class="sub">
+            <span class="icon" onclick="showMessage()">
+              <a href="https://www.linkedin.com/in/zikang-z-b5a19b127/">
+                <div style="float: center;">
+                  <img class="img" src="linkedin.png">
+                </div>
+                <div style="float: center;">
+                    <h3>Linkedin</h3>
+                </div>
+              </a>
+            </span>
           </div>
         </li>
 
@@ -133,12 +149,12 @@
                 </div>
                 <a href="khan-cv-en.pdf">
                   <div style="float: center;">
-                      <h3 style="white-space: nowrap;">CV in<br>English</h3>
+                      <h3 style="white-space: nowrap;">CV in English</h3>
                   </div>
                 </a> 
                 <a href="khan-cv-cn.pdf">
                   <div style="float: center;">
-                    <h3 style="white-space: nowrap;">CV in<br>中文</h3>
+                    <h3 style="white-space: nowrap;">CV in 中文</h3>
                   </div>
                 </a> 
           </div>
@@ -170,8 +186,6 @@
           </div>
         </li>
     </ul> 
-    <br>
-    <br>
   </div>
   <script>
     function showAlert() {
