@@ -77,6 +77,23 @@
       padding: 0px; /*adjust*/
     }
 
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #d9d9d9;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    li:hover .dropdown-content {
+      display: block;
+    }
+
+    .sub-item {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+
   </style>
 </head>
 <body>
@@ -88,7 +105,7 @@
     <ul class="menu">
         <li>
           <div class="sub">
-              <a href="khan-qr.jpg">
+              <a href="wechat-khan-qr.jpg">
                 <div style="float: center;">
                   <img class="img" src="wechat.png">
                 </div>
@@ -175,14 +192,32 @@
 
         <li>
           <div class="sub">
-            <a href="https://github.com/khan123451">
-              <div style="float: center;">
-                <img class="img" src="github.png">
+            <div style="float: center;">
+              <img class="img" src="others.png">
+            </div>
+            <h3>Others</h3>
+            <div class="dropdown-content">
+              <div class="sub-item">
+                <a href="telegram-khan-qr.jpg">
+                  <div style="float: center;">
+                    <img class="img" src="telegram-icon.png">
+                  </div>
+                  <div style="float: center;">
+                      <h3>Telegram</h3>
+                  </div>
+                </a> 
               </div>
-              <div style="float: center;">
-                  <h3>Github</h3>
+              <div class="sub-item">
+                <a href="https://github.com/khan123451">
+                  <div style="float: center;">
+                    <img class="img" src="github.png">
+                  </div>
+                  <div style="float: center;">
+                      <h3>Github</h3>
+                  </div>
+                </a>
               </div>
-            </a>
+            </div>
           </div>
         </li>
     </ul>
